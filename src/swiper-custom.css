@@ -1,0 +1,35 @@
+.swiper-button-prev,
+.swiper-button-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    /* background-color: #9427f7; */
+    border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 1rem;
+}
+
+
+
+.child2 .swiper-button-prev,
+.child2 .swiper-button-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    background-color: #9327f770;
+    border-radius: 50%;
+}
+
+.child2 .swiper-button-prev::after,
+.child2 .swiper-button-next::after{
+    font-size: 1rem;
+}

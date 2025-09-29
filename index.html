@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dmt</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+  </head>
+  <body class="text-[#2b2b2b] font-[Poppins] text-[16px] font-[300]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AWpgohGtSBsDdlDzuNnzr3DlcGOyFrwF-iwCdZHK0tHOLzR2dMJkgtUHLNymvY8E6GALNl15N9HTlAEy&components=buttons"></script> -->
+    <!-- <script
+    src="https://www.paypal.com/sdk/js?client-id=AWpgohGtSBsDdlDzuNnzr3DlcGOyFrwF-iwCdZHK0tHOLzR2dMJkgtUHLNymvY8E6GALNl15N9HTlAEy"
+    data-csp-nonce="FBZd4zl7Dp6ctr4AhFUBbWIDvyMkjfy9rL+4TvfylwSAwslz"
+  ></script> -->
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=AWpgohGtSBsDdlDzuNnzr3DlcGOyFrwF-iwCdZHK0tHOLzR2dMJkgtUHLNymvY8E6GALNl15N9HTlAEy"
+  nonce="<%= res.locals.nonce %>">
+</script>
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+
+<div id="paypal-button-container"></div>
+
+<script>
+  paypal.Buttons({
+    createOrder: async function(data, actions) {
+      // Call your backend to create the order
+      const res = await fetch('/v1/payment/order/boosting-event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount: 16, currency: 'USD' })
+      });
+      const orderData = await res.json();
+      return orderData.id; // The orderID
+    },
+    onApprove: async function(data, actions) {
+      // This is called after the buyer approves the payment on PayPal
+      const captureRes = await fetch(`/v1/payment/capture-order/${data.orderID}`, {
+        method: 'POST'
+      });
+      const captureData = await captureRes.json();
+
+      // ✅ Redirect to thank you or success page
+      window.location.href = '/payment-success'; 
+    },
+    onCancel: function (data) {
+      window.location.href = '/payment-cancelled'; 
+    },
+    onError: function (err) {
+      console.error('PayPal error:', err);
+      window.location.href = '/payment-error'; 
+    }
+  }).render('#paypal-button-container');
+</script> -->
+  </body>
+</html>

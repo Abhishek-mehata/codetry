@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --white: #fff;
+  --black: #000;
+  --primary: #9c59df;
+  --light-primary: #9c59df9e;
+
+  color: rgba(0, 0, 0, 0.87);
+  color-scheme: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-padding-top: 100px; /* Adjust this value (e.g., 100px or 5rem) */
+}
+
+html,
+body {
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+
+
+/* Apply the font family to all Ant Design  Start*/
+.ant-tabs .ant-tabs-tab-btn,
+.ant-tabs .ant-tabs-tab,
+.ant-tabs .ant-tabs-nav,
+.ant-tabs .ant-tabs-content {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ant-collapse * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ant-modal, .ant-modal * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ant-table, .ant-table * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ant-input, .ant-input *, .ant-input-textarea, .ant-input-textarea * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ant-form,
+.ant-form *{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* for search page start */
+.ant-select-dropdown {
+  transform: translateX(100%) !important;
+  min-width: 250px !important;
+  border-radius: none !important;
+}
+.ant-drawer {
+  font-family: 'Poppins', sans-serif !important;
+}
+/* for search page End */
+
+/* Apply the font family to all Ant Design  End*/
+
+.popins{
+    font-family: "Poppins", sans-serif;
+}
+
+.dmsans{
+  font-family: "DM Sans", sans-serif;
+}
+
+.smooth-scroll-section {
+  scroll-behavior: smooth;  /* Smooth scrolling inside */
+  overflow-y: auto;         /* Enable scrollbar only when needed */
+  /* No fixed height required; height adjusts to content */
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden !important;
+  /* scroll-padding-top: 20rem !important; */
+}
+
+.smooth {
+  transition: all 0.5s ease;
+}
+
+.border-outline-none {
+  border: none !important;
+  outline: none !important;
+}
+
+/* a:hover {
+  color: var(--primary);
+} */
+
+.lead {
+  line-height: 1.2 !important;
+}
+
+/* ? ========= Root Custom Scroolbar // custom scrollbar ================= */
+
+.custom_scrollBar::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0.3rem !important;
+  cursor: pointer !important;
+  -webkit-appearance: none !important;
+}
+
+.custom_scrollBar::-webkit-scrollbar-track {
+  background: var(--primary) !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white) !important;
+}
+
+.custom_scrollBar::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  background: var(--primary);
+  transition: all 0.5s ease !important;
+}
+
+.custom_scrollBar::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--primary) !important;
+}
+.leaflet-container {
+  height: 100%;
+}
+
+.floating-label {
+  transition: all 0.2s ease-in-out;
+  transform-origin: 0% 100%;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+}
+
+.input-wrapper:focus-within .floating-label,
+.input-wrapper input:not(:placeholder-shown) + .floating-label {
+  font-size: 1rem;
+  transform: translate(10px, -110%) scale(0.75);
+  top: 1.5rem;
+  left: 0;
+}
+
+@layer utilities {
+  /* =========== Custom Utilities =========== */
+
+  .keepInTouch-blur-top {
+    @apply before:absolute before:-top-10 before:left-0 before:bottom-0 before:right-0 before:blur-xl before:w-full before:h-20 before:bg-white;
+  }
+
+  .keepInTouch-bg-blur {
+    @apply absolute top-0 left-0 bottom-0 right-0 opacity-80 bg-white h-full blur-lg w-full;
+  }
+
+  .overlay {
+    @apply before:absolute before:z-40 cursor-pointer before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-0 before:bg-white before:h-full before:w-full;
+  }
+}
+
+/* =========== Ant Design Custom Styles =========== */
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.ant-checkbox:hover {
+  border-color: var(--primary) !important;
+}
+
+.ant-select-selector {
+  border: none !important;
+  outline: none !important;
+
+  &:hover {
+    border: none !important;
+    outline: none !important;
+  }
+
+  &:focus-within {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.listing-details-tabs .ant-tabs-tab {
+  padding: 0 !important;
+  margin-left: 1rem !important;
+  padding-right: 1.6rem !important;
+}
+
+.listing-details-tabs .ant-tabs-tab-active > div {
+  color: var(--primary) !important;
+}
+
+.listing-details-tabs .ant-tabs-ink-bar {
+  background-color: var(--primary) !important;
+}
+
+.listing-details-tabs .ant-tabs-nav {
+  min-width: 600 !important;
+}
+
+/* =========== Custom Radio =========== */
+
+.ant-radio-checked .ant-radio-inner {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+/* =========== Custom Dropdown =========== */
+
+.ant-dropdown-menu .ant-dropdown-menu-item-selected {
+  color: var(--white) !important;
+  background: var(--light-primary) !important;
+}
+
+.ant-menu-item-selected {
+  color: var(--white) !important;
+  background-color: var(--light-primary) !important;
+}
+
+.ant-menu-root.ant-menu-inline {
+  border-inline-end: none !important;
+}
+
+/* =========== Custom Spin Color =========== */
+
+.ant-spin-dot-item {
+  background-color: var(--light-primary) !important;
+}
+
+/* =========== Custom Phone Number Input =========== */
+
+.phoneInput input:focus-visible {
+  border: none !important;
+  outline: none !important;
+  color: var(--black) !important;
+}
+
+.phoneInput input:placeholder {
+  color: var(--black) !important;
+}
+
+.react-phone-number-input__country-select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100px;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+.react-phone-number-input__country-select option {
+  padding: 8px;
+}
+
+.react-phone-number-input__country-select:after {
+  content: "\25BC";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ant-btn-primary {
+  background: var(--primary) !important;
+}
+
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+/* =========== Custom Date Picker =========== */
+
+.ant-picker-active-bar {
+  background: var(--primary) !important;
+}
+
+/* .ant-picker-cell:hover {
+  background: var(--primary) !important;
+} */
+
+/* =========== Custom Select =========== */
+
+.ant-select-item-option-selected {
+  color: var(--white) !important;
+  background: var(--primary) !important;
+}
+
+/* =========== Custom Space Box =========== */
+
+.event-information-space-box > .ant-space-item:first-child {
+  width: 100% !important;
+}
+
+.rc-virtual-list-holder-inner {
+  gap: 0.2rem !important;
+}
+
+.input-design{
+  border: 1px solid var(--light-primary);
+  padding: 10px;
+  width: 100%;
+} 
+
+.scroll{
+  scrollbar-color:  var(--primary) transparent !important;
+  cursor: pointer;
+  scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.3rem !important;
+  cursor: pointer !important;
+}
+.scroll::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  background: var(--primary);
+  transition: all 0.5s ease !important;
+}
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--primary) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-border-color{
+  @apply border border-[#b083e2] !important;
+}
+
+.promoted_sec .swiper-button-prev,
+.promoted_sec .swiper-button-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+    color: #9427f7 ;
+    border-radius: 50%;
+    top: 92%;
+
+
+}
+
+.promoted_sec .swiper-button-prev{
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.125 12.6667L6.79167 7L1.125 1.33333' stroke='%239C59DF' stroke-width='1.41667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+
+  /* background-size: 8px 14px; */
+}
+.promoted_sec .swiper-button-next{
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.125 12.6667L6.79167 7L1.125 1.33333' stroke='%239C59DF' stroke-width='1.41667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 8px 14px; */
+}
+
+.promoted_sec .swiper-button-prev::after,
+.promoted_sec .swiper-button-next::after{
+  display: none;
+    /* content: "";
+    font-size: 17px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.125 12.6667L6.79167 7L1.125 1.33333' stroke='%239C59DF' stroke-width='1.41667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+
+@media screen and (max-width: 600px) {
+  .staysCard{
+    margin-bottom: 90px;
+  }
+  .staysDetailsCard{
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -10%);
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .promoted_sec .swiper-button-prev{
+  position:absolute;
+  left: calc(100% - 100px);
+  background-color: white;
+  color: #9427f7;
+  border: 1px solid #9427f7;
+}
+.promoted_sec .swiper-button-next{
+  position:absolute;
+  right: 0;
+  background-color: white;
+  color: #9427f7;
+  border: 1px solid #9427f7;
+}
+}
+
+
+@media(min-width: 600px){
+.promoted_sec .swiper-button-prev{
+  position:absolute;
+  left: calc(100% - 100px);
+  background-color: white;
+  color: #9427f7;
+  border: 1px solid #9427f7;
+}
+.promoted_sec .swiper-button-next{
+  position:absolute;
+  right: 0;
+  background-color: white;
+  color: #9427f7;
+  border: 1px solid #9427f7;
+}
+}
+@media(min-width: 768px){
+  .promoted_sec .swiper-button-prev{
+    display: none !important;
+  }
+  .promoted_sec .swiper-button-next{
+    display: none !important;
+  }
+}
+
+@media(min-width: 1024px){
+  .promoted_sec .swiper-button-prev{
+    display: flex !important;
+  }
+  .promoted_sec .swiper-button-next{
+    display: flex !important;
+  }
+}
+ 
+
+/* Ant Design Range Picker Custom Styles Start */
+    @media (max-width: 648px) {
+      .ant-picker-panels {
+        position: relative;
+        > *:last-child {
+          .ant-picker-date-panel {
+            width: auto;
+          }
+          .ant-picker-header-view,
+          .ant-picker-body {
+            display: none;
+          }
+          .ant-picker-header {
+            border: none;
+            position: absolute;
+            right: 0;
+            height: 40px;
+          }
+        }
+      }
+    }
+/* Ant Design Range Picker Custom Styles End  */

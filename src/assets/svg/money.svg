@@ -1,0 +1,17 @@
+<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1065_6122)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.523 21.3931C12.2439 25.1965 2.36824 24.8979 1.27026 21.3931V16.1992C5.48243 18.7749 9.96959 18.0121 13.523 16.1992V21.3931Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.39667 18.0131C10.7805 18.0131 13.523 16.6414 13.523 14.9502C13.523 13.2583 10.7805 11.8867 7.39667 11.8867C4.01356 11.8867 1.271 13.2583 1.271 14.9502C1.271 16.6414 4.01356 18.0131 7.39667 18.0131Z" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.27075 14.9492V21.0749C1.27075 22.7668 4.01332 24.1384 7.39643 24.1384C10.7802 24.1384 13.5235 22.7668 13.5235 21.0749V14.9492" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.523 18.0117C13.523 19.7036 10.7797 21.0746 7.39661 21.0746C4.01283 21.0746 1.27026 19.7036 1.27026 18.0117" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5865 16.4816H22.7122C23.5582 16.4816 24.244 15.7951 24.244 14.9498V2.69777C24.244 1.85183 23.5582 1.16602 22.7122 1.16602H2.80275C1.95681 1.16602 1.271 1.85183 1.271 2.69777V10.362" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.69397 8.82234C9.69397 7.41152 10.6582 6.18315 12.0284 5.84801C13.3987 5.5122 14.8217 6.1568 15.4737 7.40747C16.1257 8.6595 15.8386 10.194 14.7771 11.125" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.09978 4.61133C5.31059 4.61133 5.48222 4.78295 5.48222 4.99444C5.48222 5.20592 5.31059 5.37754 5.09978 5.37754C4.8883 5.37754 4.71667 5.20592 4.71667 4.99444C4.71667 4.78295 4.8883 4.61133 5.09978 4.61133Z" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.4148 12.2695C20.6263 12.2695 20.7979 12.4412 20.7979 12.652C20.7979 12.8635 20.6263 13.0351 20.4148 13.0351C20.204 13.0351 20.0323 12.8635 20.0323 12.652C20.0323 12.4412 20.204 12.2695 20.4148 12.2695" stroke="#172B4D" stroke-width="1.35135" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1065_6122">
+<rect width="25" height="25" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
